@@ -35,13 +35,14 @@
         }
 
         .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #0073b1;
-            margin-bottom: 15px;
-        }
+    width: 100%;
+    max-width: 600px; /* Poster ki width adjust karne ke liye */
+    height: auto;     /* Poori image bina kete dikhane ke liye */
+    border-radius: 8px; /* Square shape ke saath halki rounded corners */
+    border: none;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
 
         .hero h1 {
             font-size: 2.2rem;
@@ -197,7 +198,7 @@
 
         <!-- Header / Hero Section -->
         <header class="hero">
-            <img src="linkedin banner.png" alt="linkedin banner" class="profile-img">
+            <img src="linkedin banner.png" alt="Hardik Mishra" class="profile-img">
             <img src="poster-image.jpg" alt="Hardik Mishra" class="profile-img">
             <h1>Hardik Mishra</h1>
             <h2>Digital Marketing Intern & Web Development Enthusiast</h2>
