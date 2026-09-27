@@ -3,24 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardik Mishra - Portfolio</title>
+    <title>Hardik Mishra | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <!-- Social Media / WhatsApp Preview Image Tag -->
-    <meta property="og:title" content="Hardik Mishra - Portfolio" />
-    <meta property="og:description" content="Welcome to my personal portfolio website!" />
-    <meta property="og:image" content="https://hardikmishrahere.github.io/linkedin%20banner.png" />
-    <meta property="og:type" content="website" />
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background: #ffffff;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0073b1;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .hero h2 {
+            font-size: 1.1rem;
+            color: #0073b1;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Section Styling */
+        .section {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #1a1a1a;
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Skills Tags */
+        .primary-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag-primary {
+            background-color: #0073b1;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .other-skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag-secondary {
+            background-color: #eef3f8;
+            color: #333;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            border: 1px solid #dcdcdc;
+        }
+
+        /* Projects Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: #0073b1;
+        }
+
+        .project-card h4 {
+            color: #0073b1;
+            margin-bottom: 5px;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style-type: none;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+        }
+
+        .feature-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #0073b1;
+            font-weight: bold;
+        }
+
+        /* Resume Section */
+        .resume-box {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn-resume {
+            display: inline-block;
+            background-color: #0073b1;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn-resume:hover {
+            background-color: #005582;
+        }
+
+        /* Contact Details */
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item a {
+            color: #0073b1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Banner Image -->
-    <img src="linkedin%20banner.png" alt="LinkedIn Banner" width="100%" style="border-radius: 8px;">
 
-    <h1>Hi, I am Hardik Mishra!</h1>
-    <p>Welcome to my portfolio website.</p>
+    <div class="container">
 
-    <!-- LinkedIn Link -->
-    <p>
-        <a href="https://www.linkedin.com/in/hardik-mishra-17b1b8420" target="_blank">Connect with me on LinkedIn</a>
-    </p> 
+        <!-- Header / Hero Section -->
+        <header class="hero">
+            <img src="linkedin banner.png" alt="linkedin banner" class="profile-img">
+            <img src="poster-image.jpg" alt="Hardik Mishra" class="profile-img">
+            <h1>Hardik Mishra</h1>
+            <h2>Digital Marketing Intern & Web Development Enthusiast</h2>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="section">
+            <h3 class="section-title">About Me</h3>
+            <p>I’m Hardik Mishra, a B.Sc. student and aspiring digital marketer with a growing interest in technology, web development, and artificial intelligence.</p>
+            <br>
+            <p>I’m currently developing my practical knowledge in digital marketing, especially in areas such as SEO, Social Media Marketing, Google Ads, content marketing, website development, and more.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h3 class="section-title">Skills</h3>
+            <div class="primary-skills">
+                <span class="skill-tag-primary">SEO</span>
+                <span class="skill-tag-primary">SMM</span>
+                <span class="skill-tag-primary">Google Ads</span>
+                <span class="skill-tag-primary">Web Development</span>
+                <span class="skill-tag-primary">AI</span>
+            </div>
+            
+            <h4 style="margin-bottom: 10px; color: #555;">Other Skills</h4>
+            <div class="other-skills-list">
+                <span class="skill-tag-secondary">Content Creation</span>
+                <span class="skill-tag-secondary">Canva</span>
+                <span class="skill-tag-secondary">Basic Graphic Design</span>
+                <span class="skill-tag-secondary">AI Tools</span>
+                <span class="skill-tag-secondary">Communication</span>
+                <span class="skill-tag-secondary">Problem Solving</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h3 class="section-title">Projects ⭐</h3>
+            <p style="margin-bottom: 15px; color: #666; font-style: italic;">Learning by Building</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Project 01</h4>
+                    <p>SEO / Website Project</p>
+                </div>
+                <div class="project-card">
+                    <h4>Project 02</h4>
+                    <p>SEO Blog Project</p>
+                </div>
+                <div class="project-card">
+                    <h4>Project 03</h4>
+                    <p>Social Media Project</p>
+                </div>
+                <div class="project-card">
+                    <h4>Project 06</h4>
+                    <p>Creative / Branding Project</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section">
+            <h3 class="section-title">Certifications</h3>
+            <p style="color: #666; font-weight: 500;">Certifications & Learning</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li>Certificate Name</li>
+            </ul>
+        </section>
+
+        <!-- Why Work With Me Section -->
+        <section class="section">
+            <h3 class="section-title">Why Work With Me</h3>
+            <ul class="feature-list">
+                <li>I’m always working on improving my knowledge and practical skills.</li>
+                <li>I enjoy finding creative ways to communicate ideas and solve problems.</li>
+                <li>I’m open to feedback, new challenges and opportunities to improve.</li>
+            </ul>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="section resume-box">
+            <h3 class="section-title">Want to Know More About Me?</h3>
+            <p>Explore my resume to learn more about my education, skills, projects and professional journey.</p>
+            <a href="#" class="btn-resume">View Resume</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h3 class="section-title">Contact</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>Email:</strong> <br>
+                    <a href="mailto:indianhardik999@gmail.com">indianhardik999@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong> <br>
+                    <a href="https://www.linkedin.com/in/hardik-mishra-17b1b8420/" target="_blank">linkedin.com/in/hardik-mishra-17b1b8420</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
 </body>
 </html>
