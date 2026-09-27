@@ -24,26 +24,25 @@
             padding: 20px;
         }
 
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            background: #ffffff;
-            padding: 40px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-
-        .profile-img {
-    width: 100%;
-    max-width: 600px; /* Poster ki width adjust karne ke liye */
-    height: auto;     /* Poori image bina kete dikhane ke liye */
-    border-radius: 8px; /* Square shape ke saath halki rounded corners */
-    border: none;
-    object-fit: contain;
-    margin-bottom: 15px;
+       /* Hero Section */
+.hero {
+    text-align: center;
+    background: #ffffff;
+    padding: 10px; /* Extra spacing kam kar di */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
 }
 
+.profile-img {
+    width: 100%;          /* Pure box ki width cover karega */
+    max-width: 100%;      /* Poster bilkul chhota nahi hoga */
+    height: auto;         /* Aspect ratio sahi rahega, photo nahi pichegi */
+    border-radius: 8px;   /* Clean corners */
+    border: none;
+    display: block;
+    margin: 0 auto 15px auto;
+}
         .hero h1 {
             font-size: 2.2rem;
             color: #1a1a1a;
@@ -199,7 +198,6 @@
         <!-- Header / Hero Section -->
         <header class="hero">
             <img src="linkedin banner.png" alt="Hardik Mishra" class="profile-img">
-            <img src="poster-image.jpg" alt="Hardik Mishra" class="profile-img">
             <h1>Hardik Mishra</h1>
             <h2>Digital Marketing Intern & Web Development Enthusiast</h2>
         </header>
