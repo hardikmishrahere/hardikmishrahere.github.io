@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- AOS Animation CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,7 +191,21 @@
         .contact-item a:hover {
             text-decoration: underline;
         }
-    </style>
+    </style>/* Screen load animation */
+body {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 </head>
 <body>
 
@@ -348,6 +364,13 @@
         </section>
 
     </div>
-
+<!-- AOS Animation JavaScript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation speed (1 second)
+    once: true      // Animation bas ek baar chalega
+  });
+</script>
 </body>
 </html>
